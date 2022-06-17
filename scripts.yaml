@@ -1,0 +1,10 @@
+scripts:
+    gen:
+        cmd: tool/hangulGen.ts
+        allow:
+            write: true
+    preload: >
+        deno run
+        --allow-read
+        --allow-write
+        tool/preload.ts src/mod.ts dist/mod.ts

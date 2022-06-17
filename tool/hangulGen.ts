@@ -1,4 +1,4 @@
-import saveTxtAsTs from "./saveTxtAsTs.ts"
+import { saveTxty } from "./txty.ts"
 
 function hangulGen() {
     const first = "가".charCodeAt(0)
@@ -11,4 +11,4 @@ function hangulGen() {
         .join("")
 }
 
-await saveTxtAsTs("src/hangul.txt.ts", hangulGen())
+await saveTxty("src/hangul.txty.ts", hangulGen())
