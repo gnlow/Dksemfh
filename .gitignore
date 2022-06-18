@@ -1,2 +1,2 @@
-*.txty.ts
 dist/
+node_modules
