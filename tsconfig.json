@@ -1,5 +1,13 @@
 {
+    "$schema": "https://raw.githubusercontent.com/TypeScriptToLua/vscode-typescript-to-lua/master/tsconfig-schema.json",
     "compileOptions": {
         "types": ["lua-types/2.11.0"]
+    },
+    "tstl": {
+        "buildMode": "library",
+        "luaTarget": "5.3",
+        "luaBundle": "./dist/mod.lua",
+        "luaBundleEntry": "./src/mod.ts",
+        "luaLibImport": "inline"
     }
 }
